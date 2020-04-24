@@ -1,0 +1,12 @@
+config AOS_APP_NODECODE1
+    bool "MyNodeCode1"
+    select AOS_COMP_OSAL_AOS
+    select AOS_COMP_CLI if !AOS_BOARD_ESP8266
+    select AOS_COMP_NETMGR
+     
+    help
+        my node code 1
+
+if AOS_APP_nodecode1
+# Configurations for app node code 1
+endif
